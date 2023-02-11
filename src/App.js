@@ -1,9 +1,10 @@
 import './App.css';
+import FrontPage from './components/FrontPage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Video Agency</h1>
+      <FrontPage />
     </div>
   );
 }

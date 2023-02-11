@@ -1,3 +1,38 @@
+body {
+  background: #E9EAEC;
+}
+
+
+/* App */
+
 .App {
-  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+
+/* Front_page */
+
+.navbar-brand {
+  color: #FAD02C;
+  font-weight: 900;
+}
+.brand_span {
+  color: #333652;
+}
+
+.navbar-nav a {
+  color: #333652;
+  font-weight: 500;
+}
+
+.contact_btn {
+  background: #FAD02C;
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+.contact_btn:active {
+  background: #fab92c;
 }
