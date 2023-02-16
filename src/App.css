@@ -1,17 +1,14 @@
-body {
+/* Front_page */
+
+.header {
   background: #E9EAEC;
 }
-
-
-/* App */
-
-.App {
-  width: 80%;
-  margin: auto;
+.front_page {
+  width: 1500px;
+  height: 100vh;
+  background-image: url(./img/front_page_bg.jpg);
+  position: relative;
 }
-
-
-/* Front_page */
 
 .navbar-brand {
   color: #FAD02C;
@@ -20,19 +17,33 @@ body {
 .brand_span {
   color: #333652;
 }
-
 .navbar-nav a {
   color: #333652;
   font-weight: 500;
 }
-
 .contact_btn {
   background: #FAD02C;
   color: white;
   border: none;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.5rem;
 }
 .contact_btn:active {
   background: #fab92c;
+}
+
+.header_container_text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: #333652;
+}
+.header_main_text {
+  width: 70%;
+  font-weight: 900;
+  font-size: 65px;
+}
+.header_main_text span {
+  color: #FAD02C;
 }
