@@ -17,22 +17,24 @@
   height: 100vh;
 }
 
-.home_content span {
+.color {
   color: #f05f40;
 }
 
 .name_text {
   width: 30%;
+
 }
 .name_text h3 {
-  font-size: 75px;
+  font-size: calc(75px - 0.590625vw);
 }
 
 .job_text {
   width: 30%;
+
 }
 .job_text h3 {
-  font-size: 50px;
+  font-size: calc(50px - 0.590625vw);
 }
 
 .contact_btn {
@@ -41,6 +43,121 @@
 }
 .contact_btn:active {
   background: #d64b2b;
+}
+
+@media (max-width: 1500px) {
+  .home_page {
+    width: 100%;
+  }
+
+  .home_content {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .name_text h3 {
+    font-size: calc(75px - 1.890625vw);
+  }
+  .job_text h3 {
+    font-size: calc(50px - 1.890625vw);
+  }
+}
+
+@media (max-width: 991px) {
+  .bg_img {
+    background-position-x: left;
+    background-size: 144%;
+  }
+
+  .home_content {
+    display: block !important;
+    padding-top: 6rem !important;
+  }
+
+  .name_text {
+    text-align: start !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+  .name_text h3 {
+    font-size: 100px;
+  }
+
+  .job_text {
+    margin-right: auto;
+    width: 38%;
+  }
+  .job_text h3 {
+    font-size: 50px;
+  }
+
+  .contact_btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg_img {
+    background-size: 1080px;
+  }
+
+  .job_text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .bg_img {
+    background-position-x: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg_img {
+    background-size: 200%;
+  }
+
+  .name_text h3 {
+    font-size: calc(75px - 1.890625vw);
+  }
+
+  .name_text .contact_btn {
+    display: none;
+  }
+
+  .job_text {
+    width: 70%;
+  }
+  .job_text h3 {
+    font-size: calc(50px - 1.890625vw);
+  }
+  .job_text p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact_btn {
+    font-size: 18px;
+    padding: 12px 25px !important;
+  }
+}
+
+@media (max-width: 364px) {
+  .name_text h3 {
+    font-size: calc(65px - 1.890625vw);
+  }
+
+  .job_text {
+    width: 100%;
+  }
+  .job_text h3 {
+    font-size: calc(40px - 1.890625vw);
+  }
+  .job_text p {
+    width: 100%;
+  }
 }
 
 
@@ -52,6 +169,20 @@
 }
 .services_content {
   width: 1400px;
-  top: 50%; left: 50%;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.card_container {
+  margin-top: 100px;
+  gap: 100px;
+}
+
+.card_custom {
+  background:  rgb(19, 19, 19);
+}
+
+.card-text {
+  font-size: 15px;
 }
