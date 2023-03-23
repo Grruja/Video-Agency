@@ -1,0 +1,113 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    background: var(--color-primary);
+}
+.my_img {
+    height: 100%;
+    background-image: url(../img/my_img.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 55%;
+}
+.gradient {
+    background: linear-gradient(transparent, var(--color-bg));
+    height: 100%;
+}
+
+.home_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+/* =============== BTN Container ============== */
+.home_btn_container {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+/* =============== Home Socials ============== */
+.home_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.home_socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
+/* =============== Scroll Down ============== */
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/* ================ Media Queries (MD) ================= */
+@media screen and (max-width: 1250px) {
+    .my_img {
+        background-size: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+
+    .my_img {
+        background-size: 55%;
+    }
+}
+
+
+/* ================ Media Queries (SM) ================= */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+        padding-top: 4rem;
+    }
+
+    .my_img {
+        background-size: 190%;
+    }
+
+    .home_socials,
+    .scroll_down {
+        display: none;
+    }
+
+    .home_btn_container {
+        margin-top: 1.7rem;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    header {
+        padding-top: 1rem;
+    }
+
+    .my_img {
+        background-size: contain;
+    }
+}
