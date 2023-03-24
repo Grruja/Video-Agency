@@ -6,7 +6,7 @@ header {
 }
 .my_img {
     height: 100%;
-    background-image: url(../img/my_img.png);
+    background-image: url(../../img/my_img.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
