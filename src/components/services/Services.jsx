@@ -12,7 +12,7 @@ function Services() {
 
                 <article className="service">
                     <div className="service_name">
-                        <h3>Content Voice Over</h3>
+                        <h3>Content Voiceover</h3>
                     </div>
 
                     <ul className='service_list'>
@@ -45,7 +45,7 @@ function Services() {
 
                 <article className="service">
                     <div className="service_name">
-                        <h3>Voice Over</h3>
+                        <h3>Voiceover</h3>
                     </div>
 
                     <ul className='service_list'>

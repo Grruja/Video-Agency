@@ -37,7 +37,7 @@
 .service_list li {
     display: flex;
     gap: 1rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 .service_list p {
     font-size: 0.9rem;
